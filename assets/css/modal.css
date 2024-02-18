@@ -1,0 +1,38 @@
+dialog {
+  width: 100vw;
+  padding: 0;
+  border-radius: 16px;
+  border: none;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+dialog div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+dialog div button {
+  width: 30px;
+  background-color: transparent;
+  align-self: self-end;
+  border: none;
+}
+
+dialog h2 {
+  text-transform: capitalize;
+}
+
+dialog div img {
+  max-width: 200px;
+  align-self: center;
+}
+
+@media (min-width: 992px) {
+  dialog {
+    width: 500px;
+  }
+}
